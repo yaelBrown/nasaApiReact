@@ -42,3 +42,6 @@ export class App extends Component {
 } // export class app
 
 export default App
+
+
+// sometimes media_type: "video" create embed for it
