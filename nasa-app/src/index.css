@@ -1,13 +1,82 @@
-body {
+/* Variables */
+
+:root {
+  --null: "";
+}
+
+/* Borders (for troubleshooting) */
+
+.wborder {
+  border: 1px solid #fff;
+  z-index: 999;
+}
+
+.bborder {
+  border: 1px solid #000;
+  z-index: 999;
+}
+
+/* Basic Page Elements */
+
+* {
+  box-sizing: border-box;
+}
+
+main, html, body {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  flex-direction: column;
+  background-color: #52616a;
+}
+
+/* Page Content */
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  background-image: url("./img/manInSpace.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+
+}
+
+.card {
+  text-align: center;
+  margin: 5em auto auto auto;
+  width: 50%;
+  text-emphasis: bold;
+  padding: 1em;
+  background-color: #c9d6de;
+  -webkit-box-shadow: 1px 11px 15px 5px #000000;
+  box-shadow: 1px 11px 15px 5px #000000;
+}
+
+p {
+  padding: 2em;
+  line-height: 1.7em;
+  color: #1e2022;
+  font-weight: 700;
+}
+
+h1 {
+  color: #1e2022;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+

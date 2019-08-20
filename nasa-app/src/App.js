@@ -53,9 +53,12 @@ export class App extends Component {
 
   render() {
     return (
-      <div>
-        <h1>{this.state.api[0].title}</h1>
-        <img src={this.state.api[0].url} alt="hd-img" />
+      <div className="container">
+        <div className="card">
+          <h1>{this.state.api[0].title}</h1>
+          <img src={this.state.api[0].url} alt="hd-img" />
+          <p>{this.state.api[0].explanation}</p>
+        </div>
       </div>
     )
   }
